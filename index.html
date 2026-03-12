@@ -1,73 +1,38 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <title>Quiz Yahoo Pro</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Projects</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<div class="overlay"></div>
+<div class="container">
 
-<div class="quiz-container">
+    <img src="1.webp" class="top-img">
 
-    <div class="top-bar">
-        <button id="darkToggle">🌙</button>
-        <p id="timer">Time: 15s</p>
-    </div>
+    <h1>My Projects</h1>
 
-    <h1>Quiz Yahoo</h1>
+    <button class="project-btn"
+        onclick="window.location.href='../project 1 quiz app/index.html'">
+        Open Project 1 Quiz App
+    </button>
 
-    <div class="progress">
-        <div id="progressBar"></div>
-    </div>
-                                                                
-    <div id="quiz-box">
-        <h2 id="question"></h2>
+    <button class="project-btn"
+        onclick="window.location.href='../project 2 tip calculator/index.html'">
+        Open Project 2 Tip Calculator
+    </button>
 
-        <div class="options">
-            <button class="option-btn"></button>
-            <button class="option-btn"></button>
-            <button class="option-btn"></button>
-            <button class="option-btn"></button>
-        </div>
+    <button class="project-btn"
+        onclick="window.location.href='../project 3 todo list/index.html'">
+        Open Project 3 Todo List
+    </button>
 
-        <button id="nextBtn" class="main-btn">Next</button>
-    </div>
-
-    <div id="result-box" class="hide">
-        <h2>Your Score</h2>
-        <p id="score"></p>
-        <div id="review" class="review-box"></div>
-        <button id="restartBtn" class="main-btn">Restart Quiz</button>
-    </div>
+    <button class="project-btn"
+        onclick="window.location.href='../project 4 quotes gen/index.html'">
+        Open Project 4 Quotes Generator
+    </button>
 
 </div>
 
-<style>
-.back-btn {
-    position: fixed;
-    top: 15px;
-    left: 15px;
-    padding: 8px 15px;
-    background-color: black;
-    color: white;
-    border: none;
-    border-radius: 6px;
-    cursor: pointer;
-}
-.back-btn:hover {
-    background-color: #333;
-}
-</style>
-
-<button class="back-btn"
-onclick="window.location.href='../all project phase 3/index.html'">
-⬅ Back
-</button>
-
-<script src="script.js"></script>
 </body>
 </html>
-
