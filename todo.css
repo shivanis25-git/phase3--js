@@ -1,0 +1,117 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+:root{
+  --background:#000430;
+  --card:#7629ce;
+  --text:#fff;
+  --purple:#828dff;
+  --teal:#24feee;
+}
+
+body{
+  background: var(--background);
+  color: var(--text);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container{
+  max-width: 500px;
+  width: 100%;
+}
+
+.stats-container{
+  padding: 20px;
+  border: 2px solid var(--purple);
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+#progressBar{
+  width: 100%;
+height: 10px; 
+  background: #333;
+  border-radius: 10px;
+  margin-top: 10px;
+}
+
+#progress{
+  width: 0%;
+  height: 10px;
+  background: var(--teal);
+  border-radius: 10px;
+  transition: 0.3s;
+}
+
+.stats-numbers{
+  width: 80px;
+  height: 80px;
+  background: var(--purple);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+}
+
+form{
+  margin-top: 20px;
+  display: flex;
+  gap: 10px;
+}
+
+input{
+  flex: 1;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid var(--purple);
+}
+
+button{
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  font-size: 24px;
+  background: var(--purple);
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+#task-list{
+  margin-top: 20px;
+  list-style: none;
+}
+
+.taskItem{
+  background: #1a1a40;
+  padding: 10px;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.task{
+  display: flex;
+  gap: 10px;
+}
+
+.task.completed p{
+  text-decoration: line-through;
+  color: var(--teal);
+}
+
+.icons img{
+  width: 20px;
+  cursor: pointer;
+  margin-left: 10px;
+}
+

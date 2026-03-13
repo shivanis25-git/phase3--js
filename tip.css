@@ -1,0 +1,176 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  background: rgb(171, 245, 245);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+
+.container {
+  max-width: 900px;
+  width: 100%;
+  display: flex;
+  background: rgb(231, 218, 218);
+  border-radius: 20px;
+  overflow: hidden;
+  position: relative;
+}
+
+
+.wrapper {
+  width: 50%;
+  padding: 40px;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0 20px;
+  border: none;
+  background: #f3f8fb;
+  border-radius: 4px;
+}
+
+input:focus {
+  outline: none;
+}
+
+
+.Tips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.Tip {
+  background: #00474b;
+  color: #a4cdda;
+  padding: 10px 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.Tip:hover,
+.Tip.active {
+  background: #26c0ab;
+  color: #00474b;
+}
+
+
+button {
+  width: 100%;
+  height: 40px;
+  border: none;
+  background: #e0f2fe;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+button:hover {
+  background: #26c0ab;
+  color: #00474b;
+}
+
+
+.right-wrapper {
+  width: 50%;
+  background: #00474b;
+  color: #9dc8c9;
+  padding: 40px;
+}
+
+.right-wrapper span {
+  font-size: 30px;
+  color: #26c0ab;
+}
+
+
+.theme-switch {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+.theme-switch input {
+  display: none;
+}
+
+.theme-switch label {
+  width: 50px;
+  height: 26px;
+  background: #94a3b8;
+  border-radius: 20px;
+  display: block;
+  position: relative;
+  cursor: pointer;
+}
+
+.theme-switch label::after {
+  content: '';
+  width: 20px;
+  height: 20px;
+  background: white;
+  border-radius: 50%;
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  transition: 0.3s;
+}
+
+.theme-switch input:checked + label {
+  background: #26c0ab;
+}
+
+.theme-switch input:checked + label::after {
+  transform: translateX(24px);
+}
+
+
+body.dark {
+  background: #0e227c;
+}
+
+body.dark .container {
+  background: #1e293b;
+}
+
+body.dark .wrapper,
+body.dark .right-wrapper {
+  color: #e5e7eb;
+}
+
+body.dark input {
+  background: #334155;
+  color: white;
+}
+
+body.dark .right-wrapper {
+  background: #020617;
+}
+
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .wrapper,
+  .right-wrapper {
+    width: 100%;
+  }
+
+  .theme-switch {
+    position: static;
+    margin-bottom: 20px;
+  }
+}

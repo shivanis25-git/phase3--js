@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Beautiful Quote Generator</title>
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+
+  <link rel="stylesheet" href="quotes.css">
+</head>
+<body>
+
+  <div class="container">
+    <h1>✨ Quote Generator ✨</h1>
+
+    <div class="quote-box">
+      <i class="fa-solid fa-quote-left quote-icon"></i>
+      <p id="quote">Click below to generate a quote</p>
+      <p id="author">— Author</p>
+    </div>
+
+    <div class="buttons">
+      <button id="newQuote">New Quote</button>
+
+      <div class="icons">
+        <i class="fa-brands fa-instagram" id="instagram"></i>
+        <i class="fa-solid fa-copy" id="copy"></i>
+        <i class="fa-solid fa-volume-high" id="sound"></i>
+      </div>
+    </div>
+  </div>
+
+  <style>
+.back-btn {
+    position: fixed;
+    top: 15px;
+    left: 15px;
+    padding: 8px 15px;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+.back-btn:hover {
+    background-color: #333;
+}
+</style>
+
+<button class="back-btn"
+onclick="window.location.href='../all project phase 3/home.html'">
+⬅ Back
+</button>
+
+  <script src="quotes.js"></script>
+</body>
+</html>
